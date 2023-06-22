@@ -30,7 +30,7 @@ export default function Code() {
             <div class="code-repo-container">
 
                 <div class="project-repo">
-                    <a href='https://github.com/campuedfranz' target='_blank' class="link-project-repo">
+                    <a href='https://github.com/campuedfranz/campued-portfolio' target='_blank' class="link-project-repo">
                         <div class="repo-title">My Portfolio Website</div>
                         <div class="repo-tools">
                             <img class="repo-tools-image" src={HTML}></img>
@@ -41,7 +41,7 @@ export default function Code() {
                 </div>
 
                 <div class="project-repo">
-                    <a href='https://github.com/campuedfranz' target='_blank' class="link-project-repo">
+                    <a href='https://github.com/campuedfranz/e-commerce-api' target='_blank' class="link-project-repo">
                         <div class="repo-title">E-commerce-API</div>
                         <div class="repo-tools">
                             <img class="repo-tools-image" src={REST}></img>
@@ -56,7 +56,7 @@ export default function Code() {
                 </div>
 
                 <div class="project-repo">
-                    <a href='https://github.com/campuedfranz' target='_blank' class="link-project-repo">
+                    <a href='https://github.com/campuedfranz/e-commerce-react-app' target='_blank' class="link-project-repo">
                         <div class="repo-title">React Ecommerce App</div>
                         <div class="repo-tools">
                             <img class="repo-tools-image" src={ReactImg}></img>
@@ -67,6 +67,17 @@ export default function Code() {
                     </a>
                 </div>
                 
+                <div class="project-repo">
+                    <a href='https://github.com/campuedfranz/mini-projects' target='_blank' class="link-project-repo">
+                        <div class="repo-title">Mini Projects</div>
+                        <div class="repo-tools">
+                            <img class="repo-tools-image" src={HTML}></img>
+                            <img class="repo-tools-image" src={CSS}></img>
+                            <img class="repo-tools-image" src={JS}></img>
+                        </div>
+                    </a>
+                </div>
+
             </div>
            
            <Footer />

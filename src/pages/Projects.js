@@ -51,6 +51,20 @@ export default function Projects() {
                     resulting in a robust and engaging e-commerce front-end application.
                 </div>
             </div>
+            <div class="project-container">
+                <div class="project-display-container">
+                    <div class="card">
+                        <div class="bg mini-projects"></div>
+                        <div class="blob"></div>
+                    </div>
+                </div>
+                <div class="project-description-container">
+                    Mini projects utilizing HTML, CSS, JavaScript, and DOM manipulation. The projects included a quote generator, an accordion, and 
+                    a to-do list, each showcasing different aspects of web development and interactivity. Through the implementation of Fetch API concepts on the quote generator, 
+                    the project offered dynamic content generation functionalities, providing valuable hands-on experience in front-end development.
+                </div>
+            </div>
+
                 
            <Footer />
             
