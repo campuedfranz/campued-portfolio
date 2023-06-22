@@ -1,38 +1,1929 @@
-.App {
-  text-align: center;
+/*CSS RESET*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body {
+  background-color: #020301;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+#root {
+  background-color: #020301;
+}
+
+/* Home page styling */
+
+  /* Background */
+.canvas {
+  background-image: url("./assets/images/campued-home-image.png");
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+  /* Homepage text */
+/* If the screen size is 576px wide or more Mobile*/ 
+
+@media screen and (max-width: 576px) {
+  p.intro-message {
+      color: #FFFFFF;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 23px;
+      padding-top: 35%;
+      padding-left: 55%;
+      
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* If the screen size is 577px wide or more Tablet*/
+@media screen and (min-width: 577px) {
+  p.intro-message {
+      color: #FFFFFF;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 40px;
+      padding-top: 25%;
+      padding-left: 52%;
+      
+  }
+}
+
+/* If the screen size is 992px wide or more Desktop*/ 
+@media screen and (min-width: 992px) {
+  p.intro-message {
+      color: #FFFFFF;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 50px;
+      padding-top: 10%;
+      padding-left: 55%;
+      
+  }
+}
+
+/* If the screen size is 1200px wide or more XL Desktop*/ 
+@media screen and (min-width: 1200px) {
+  p.intro-message {
+      color: #FFFFFF;
+      font-family: 'Open Sans', sans-serif;
+      font-size: 65px;
+      padding-top: 10%;
+      padding-left: 55%;
+      
+  }
+}
+
+/* If the screen size is 576px wide or more Mobile*/ 
+
+@media screen and (max-width: 576px) {
+  p.name {
+      color: #FFFFFF;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 35px;
+      padding-left: 55%;
+      padding-bottom: 20px;
+      
+  }
+}
+
+/* If the screen size is 577px wide or more Tablet*/
+@media screen and (min-width: 577px) {
+  p.name {
+      color: #FFFFFF;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 53px;
+      padding-left: 52%;
+      padding-bottom: 20px;
+
+      
+  }
+}
+
+/* If the screen size is 992px wide or more Desktop*/ 
+@media screen and (min-width: 992px) {
+  p.name {
+      color: #FFFFFF;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 60px;
+      padding-left: 55%;
+      padding-bottom: 30px;
+
+      
+  }
+}
+
+
+/* If the screen size is 1200px wide or more XL Desktop*/ 
+@media screen and (min-width: 1200px) {
+  p.name {
+      color: #FFFFFF;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      font-size: 95px;
+      padding-left: 55%;
+      
+  }
+}
+
+
+.Typewriter__cursor {
+  color: #FFFFFF  ;
+}
+
+/* If the screen size is 576px wide or more Mobile*/ 
+
+@media screen and (max-width: 576px) {
+  .Typewriter__wrapper {
+      font-family: 'Open Sans', sans-serif;
+      color: #FFFFFF;
+      font-size: 15px;
+      padding-left: 55%;
+
+
+  }
+}
+
+/* If the screen size is 577px wide or more Tablet*/
+@media screen and (min-width: 577px) {
+  .Typewriter__wrapper {
+      font-family: 'Open Sans', sans-serif;
+      color: #FFFFFF;
+      font-size: 22px;
+      padding-left: 52%;
+  }
+}
+
+/* If the screen size is 992px wide or more Desktop*/
+@media screen and (min-width: 992px) {
+  .Typewriter__wrapper {
+      font-family: 'Open Sans', sans-serif;
+      color: #FFFFFF;
+      font-size: 28px;
+      padding-left: 55%;
+  }
+}
+
+
+
+
+/* If the screen size is 1200px wide or more XL Desktop*/
+@media screen and (min-width: 1200px) {
+  .Typewriter__wrapper {
+      font-family: 'Open Sans', sans-serif;
+      color: #FFFFFF;
+      font-size: 35px;
+      padding-left: 55%;
+  }
+}
+
+  /* Navigation bar */
+
+/* If the screen size is 576px wide or more Mobile*/ 
+@media screen and (max-width: 576px) {
+  nav.nav-bar{
+      margin-top: 80%;
+  }
+  
+  
+  a.about{
+      text-align: center;
+      display: inline-block;
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-left: 25%;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 60px;
+      font-size: 15px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.projects{
+      text-align: center;
+      display: inline-block;
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-left: 5px;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 75px;
+      font-size: 15px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.code {
+      text-align: center;
+      display: inline-block;
+      padding-left: 8px;
+      padding-right: 8px;
+      margin-left: 5px;
+      margin-right: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 50px;
+      font-size: 15px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  
+  div.nav-underline {
+      display: block;
+      max-width: 90%;
+      background-color: #FFE227;
+      margin-top: 5px;
+      font-size: 10px;
+      margin-left: 20%;
+      color: #FFE227;
+  
+  }
+}
+
+/* If the screen size is 577px wide or more Tablet*/
+@media screen and (min-width: 577px) {
+  nav.nav-bar{
+      margin-top: 35%;
+  }
+  
+  
+  a.about{
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 25%;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 150px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.projects{
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 170px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.code {
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 120px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  
+  div.nav-underline {
+      display: block;
+      max-width: 90%;
+      background-color: #FFE227;
+      margin-top: 5px;
+      font-size: 10px;
+      margin-left: 20%;
+      color: #FFE227;
+  
+  }
+}
+
+/* If the screen size is 992px wide or more Desktop*/
+@media screen and (min-width: 992px) {
+  nav.nav-bar{
+      margin-top: 18%;
+  }
+  
+  
+  a.about{
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 45%;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 150px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.projects{
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 170px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.code {
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 120px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  
+  div.nav-underline {
+      display: block;
+      max-width: 70%;
+      background-color: #FFE227;
+      margin-top: 5px;
+      font-size: 10px;
+      margin-left: 40%;
+      color: #FFE227;
+  
+  }
+}
+
+/* If the screen size is 1200px wide or more XL Desktop*/
+@media screen and (min-width: 1200px) {
+  nav.nav-bar{
+      margin-top: 15%;
+  }
+  
+  
+  a.about{
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 55%;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 150px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.projects{
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 30px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 175px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  a.code {
+      text-align: center;
+      display: inline-block;
+      padding-left: 15px;
+      padding-right: 15px;
+      margin-left: 10px;
+      margin-right: 10px;
+      font-family: 'Ubuntu', sans-serif;
+      font-weight: bold;
+      max-width: 150px;
+      font-size: 35px;
+      text-decoration: none;
+      color: #FFFFFF;
+      text-shadow: 2px 2px #ff0000;
+  }
+  
+  
+  div.nav-underline {
+      display: block;
+      max-width: 55%;
+      background-color: #FFE227;
+      margin-top: 5px;
+      font-size: 10px;
+      margin-left: 50%;
+      color: #FFE227;
+  
+  }
+
+  
+}
+
+a.about:hover{
+  transform: rotate(-25deg);
+  border: solid 1px #F7838D;
+  background-color: #F7838D;
+  color: #020301;
+  text-shadow: none;
+}
+
+a.projects:hover{
+  transform: rotate(-25deg);
+  border: solid 1px #F7838D;
+  background-color: #F7838D;
+  color: #020301;
+  text-shadow: none;
+}
+
+a.code:hover{
+  transform: rotate(-25deg);
+  border: solid 1px #F7838D;
+  background-color: #F7838D;
+  color: #020301;
+  text-shadow: none;
+}
+
+
+/* Main Navbar */
+
+.main-navbar {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 20px;
+
 }
 
-.App-link {
-  color: #61dafb;
+.nav-links-container {
+  width: 100%;
 }
 
-@keyframes App-logo-spin {
+/* If the screen size is 576px wide or more Mobile*/ 
+
+@media screen and (max-width: 576px) {
+
+  #logo {
+    width: 100px;
+    height: 40px;
+    margin-left: 20px;
+  }
+
+  div.underline {
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: solid 5px #FFE227;
+    margin-left: 20px;
+  }
+
+  a.main-nav-link-about {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 8px;
+  }
+  
+  a.main-nav-link-projects {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+  }
+  
+  a.main-nav-link-code {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 20px;
+    margin-bottom: 8px;
+  }
+  
+  a.active {
+    border-top: solid 5px #F7838D;
+    border-left: solid 5px #F7838D;
+    padding-right: 15px;
+  }
+
+  
+}
+
+/* If the screen size is 577px wide or more Tablet*/ 
+
+@media screen and (min-width: 577px) {
+
+  #logo {
+    width: 150px;
+    height: 60px;
+    margin-left: 20px;
+  }
+
+  div.underline {
+    font-size: 24px;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: solid 8px #FFE227;
+    margin-left: 40px;
+  }
+
+  a.main-nav-link-about {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  
+  a.main-nav-link-projects {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 35px;
+    margin-left: 35px;
+    margin-bottom: 10px;
+  }
+  
+  a.main-nav-link-code {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+  a.active {
+    border-top: solid 8px #F7838D;
+    border-left: solid 8px #F7838D;
+    padding-right: 30px;
+  }
+}
+
+/* If the screen size is 992px wide or more Desktop*/ 
+
+@media screen and (min-width: 992px) {
+
+  #logo {
+    width: 200px;
+    height: 80px;
+    margin-left: 20px;
+  }
+
+  div.underline {
+    font-size: 32px;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: solid 8px #FFE227;
+    margin-left: 40px;
+  }
+
+  a.main-nav-link-about {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+  
+  a.main-nav-link-projects {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 50px;
+    margin-left: 50px;
+    margin-bottom: 10px;
+  }
+  
+  a.main-nav-link-code {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 10px;
+  }
+
+  a.active {
+    border-top: solid 8px #F7838D;
+    border-left: solid 8px #F7838D;
+    padding-right: 35px;
+  }
+}
+
+
+/* If the screen size is 1200px wide or more XL Desktop*/ 
+
+
+@media screen and (min-width: 1200px) {
+
+  #logo {
+    width: 240px;
+    height: 100px;
+    margin-left: 20px;
+  }
+
+  div.underline {
+    font-size: 45px;
+    display: flex;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: solid 8px #FFE227;
+    margin-left: 60px;
+  }
+
+  a.main-nav-link-about {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+  
+  a.main-nav-link-projects {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-right: 75px;
+    margin-left: 75px;
+    margin-bottom: 15px;
+  }
+  
+  a.main-nav-link-code {
+    text-decoration: none;
+    color: #FFFFFF;
+    margin-bottom: 15px;
+  }
+
+  a.active {
+    border-top: solid 10px #F7838D;
+    border-left: solid 10px #F7838D;
+    padding-right: 50px;
+  }
+  
+}
+
+
+#logo:hover {
+  animation: rotation 1s infinite linear;
+
+}
+
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }
   to {
-    transform: rotate(360deg);
+    transform: rotate(359deg);
   }
+}
+
+
+a.main-nav-link-about:hover {
+  color: #FFE227;
+}
+
+a.main-nav-link-projects:hover {
+  color: #FFE227;
+}
+
+a.main-nav-link-code:hover {
+  color: #FFE227;
+}
+
+
+
+/* ABOUT PAGE */
+
+/* If the screen size is 576px wide or more Mobile*/ 
+@media screen and (max-width: 576px) {
+
+  /* Name and about me description */
+
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+  }
+  
+  .name-container {
+    width: 100%;
+  }
+  
+  .main-app-name {
+    text-align: end;
+    font-size: 50px;
+    padding-right: 10px;
+  }
+  
+  .name-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+  
+  .description-container {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: justify;
+    font-size: 14px;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+  
+  .tech-stack-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .language-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .language-container:hover {
+    transform: scale(1.20);
+  }
+  
+  .tech-stack-images {
+    width: 75px;
+    height: 75px;
+  }
+  
+
+    /* Job Experiences */
+
+  .experience-container {
+    display: flex;
+  }
+
+
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+
+  }
+
+  .job-header-cotainer {
+    width: 100%;
+  }
+
+  .job-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+
+  .job-description-container {
+    text-align: justify;
+    font-size: 14px;
+    width: 100%;
+    padding-top: 5%;
+    padding-left: 3%;
+    padding-right: 3%;
+  }
+
+  .job-title {
+    margin-top: 5px;
+    text-align: end;
+    font-size: 50px;
+    background-color: #FFE227;
+    color: #020301;
+    padding: 10px;
+  }
+
+  .job-company {
+    text-align: end;
+    font-size: 30px;
+    color: #F7838D;
+    padding-right: 10px;
+  }
+
+  .job-timeline {
+    text-align: end;
+    font-size: 18px;
+    color: #FFFFFF;
+    padding-right: 10px;
+
+  }
+  
+  
+}
+
+
+/* If the screen size is 577px wide or more Tablet*/ 
+@media screen and (min-width: 577px) {
+
+  /* Name and about me description */
+
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+  
+  }
+  
+  .name-container {
+    width: 40%;
+  }
+  
+  .main-app-name {
+    text-align: end;
+    font-size: 50px;
+    
+  }
+  
+  .name-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+  
+  .description-container {
+    margin-left: 35px;
+    text-align: justify;
+    font-size: 20px;
+    width: 55%;
+  }
+  
+  .tech-stack-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .language-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .language-container:hover {
+    transform: scale(1.20);
+  }
+  
+  .tech-stack-images {
+    width: 75px;
+    height: 75px;
+  }
+  
+
+    /* Job Experiences */
+
+  .experience-container {
+    display: flex;
+  }
+
+
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+
+  }
+
+  .job-header-cotainer {
+    width: 40%;
+  }
+
+  .job-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+
+  .job-description-container {
+    margin-left: 35px;
+    text-align: justify;
+    font-size: 20px;
+    width: 55%;
+  }
+
+  .job-title {
+    margin-top: 5px;
+    text-align: end;
+    font-size: 50px;
+    background-color: #FFE227;
+    color: #020301;
+    padding: 10px;
+  }
+
+  .job-company {
+    text-align: end;
+    font-size: 30px;
+    color: #F7838D;
+  }
+
+  .job-timeline {
+    text-align: end;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  
+  
+}
+
+
+/* If the screen size is 992px wide or more Desktop*/ 
+@media screen and (min-width: 992px) {
+
+  /* Name and about me description */
+
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+  
+  }
+  
+  .name-container {
+    width: 40%;
+  }
+  
+  .main-app-name {
+    text-align: end;
+    font-size: 65px;
+    
+  }
+  
+  .name-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+  
+  .description-container {
+    margin-left: 40px;
+    text-align: justify;
+    font-size: 20px;
+    width: 55%;
+  }
+  
+  .tech-stack-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .language-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .language-container:hover {
+    transform: scale(1.20);
+  }
+  
+  .tech-stack-images {
+    width: 75px;
+    height: 75px;
+  }
+  
+
+    /* Job Experiences */
+
+  .experience-container {
+    display: flex;
+  }
+
+
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+
+  }
+
+  .job-header-cotainer {
+    width: 40%;
+  }
+
+  .job-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+
+  .job-description-container {
+    margin-left: 40px;
+    text-align: justify;
+    font-size: 20px;
+    width: 55%;
+  }
+
+  .job-title {
+    margin-top: 5px;
+    text-align: end;
+    font-size: 50px;
+    background-color: #FFE227;
+    color: #020301;
+    padding: 10px;
+  }
+
+  .job-company {
+    text-align: end;
+    font-size: 30px;
+    color: #F7838D;
+  }
+
+  .job-timeline {
+    text-align: end;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+  
+  
+}
+
+/* If the screen size is 1200px wide or more XL Desktop*/ 
+@media screen and (min-width: 1200px) {
+
+  /* Name and about me description */
+
+  .about-me-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+  
+  }
+  
+  .name-container {
+    width: 40%;
+  }
+  
+  .main-app-name {
+    text-align: end;
+    font-size: 75px;
+    
+  }
+  
+  .name-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+  
+  .description-container {
+    margin-left: 60px;
+    text-align: justify;
+    font-size: 30px;
+    width: 55%;
+  }
+  
+  .tech-stack-container {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .language-container {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-size: 12px;
+    align-items: center;
+    transition: all 0.5s;
+  }
+  
+  .language-container:hover {
+    transform: scale(1.20);
+  }
+  
+  .tech-stack-images {
+    width: 75px;
+    height: 75px;
+  }
+  
+
+    /* Job Experiences */
+
+  .experience-container {
+    display: flex;
+  }
+
+
+  .experience-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 5%;
+
+  }
+
+  .job-header-cotainer {
+    width: 40%;
+  }
+
+  .job-underline {
+    background-color: #F7838D;
+    font-size: 10px;
+    color: #F7838D;
+  }
+
+  .job-description-container {
+    margin-left: 60px;
+    text-align: justify;
+    font-size: 30px;
+    width: 55%;
+  }
+
+  .job-title {
+    margin-top: 5px;
+    text-align: end;
+    font-size: 50px;
+    background-color: #FFE227;
+    color: #020301;
+    padding: 10px;
+  }
+
+  .job-company {
+    text-align: end;
+    font-size: 30px;
+    color: #F7838D;
+  }
+
+  .job-timeline {
+    text-align: end;
+    font-size: 18px;
+    color: #FFFFFF;
+  }
+}
+
+
+
+/* Projects Page */
+
+/* If the screen size is 576px wide or more Desktop*/ 
+@media screen and (max-width: 576px) {
+
+  /* Projects */
+.project-container {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+margin-top: 80px;
+color: #FFFFFF;
+font-family: 'Open Sans', sans-serif;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.project-display-container {
+padding: 5px;
+display: flex;
+flex-wrap: wrap;
+}
+
+.project-description-container {
+margin-top: 30px;
+width: 100%;
+font-size: 14px;
+text-align: justify;
+}
+
+
+.card {
+position: relative;
+width: 300px;
+height: 150px;
+border-radius: 14px;
+z-index: 3;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+/* box-shadow: 20px 20px 60px #F7838D, -20px -20px 60px #FFE227; */
+;
+}
+
+.bg {
+position: absolute;
+top: 5px;
+left: 5px;
+width: 290px;
+height: 140px;
+z-index: 2;
+backdrop-filter: blur(24px);
+border-radius: 10px;
+overflow: hidden;
+outline: 2px solid #020301;
+}
+
+.blob {
+position: absolute;
+z-index: 1;
+top: 50%;
+left: 50%;
+width: 300px;
+height: 150px;
+border-radius: 50%;
+background-color: #FFFFFF;
+opacity: 1;
+filter: blur(12px);
+animation: blob-bounce 5s infinite ease;
+}
+ 
+}
+
+/* If the screen size is 577px wide or more Desktop*/ 
+@media screen and (min-width: 577px) and (max-width: 991px) {
+
+  /* Projects */
+.project-container {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+margin-top: 80px;
+color: #FFFFFF;
+font-family: 'Open Sans', sans-serif;
+margin-left: 5%;
+margin-right: 5%;
+}
+
+.project-display-container {
+padding: 5px;
+}
+
+.project-description-container {
+margin-top: 30px;
+width: 100%;
+font-size: 20px;
+text-align: justify;
+}
+
+
+.card {
+position: relative;
+width: 500px;
+height: 350px;
+border-radius: 14px;
+z-index: 3;
+overflow: hidden;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+/* box-shadow: 20px 20px 60px #F7838D, -20px -20px 60px #FFE227; */
+;
+}
+
+.bg {
+position: absolute;
+top: 5px;
+left: 5px;
+width: 490px;
+height: 340px;
+z-index: 2;
+backdrop-filter: blur(24px);
+border-radius: 10px;
+overflow: hidden;
+outline: 2px solid #020301;
+}
+
+.blob {
+position: absolute;
+z-index: 1;
+top: 50%;
+left: 50%;
+width: 500px;
+height: 350px;
+border-radius: 50%;
+background-color: #FFFFFF;
+opacity: 1;
+filter: blur(12px);
+animation: blob-bounce 5s infinite ease;
+}
+ 
+}
+
+
+/* If the screen size is 992px wide or more Desktop*/ 
+@media screen and (min-width: 992px) {
+
+  /* Projects */
+   .project-container {
+     display: flex;
+       flex-wrap: wrap;
+       margin-top: 80px;
+       color: #FFFFFF;
+       font-family: 'Open Sans', sans-serif;
+       margin-left: 5%;
+       margin-right: 5%;
+   }
+ 
+   .project-display-container {
+     padding: 5px;
+   }
+ 
+   .project-description-container {
+     margin-left: 20px;
+     width: 40%;
+     font-size: 20px;
+     text-align: justify;
+   }
+ 
+ 
+   .card {
+     position: relative;
+     width: 500px;
+     height: 350px;
+     border-radius: 14px;
+     z-index: 3;
+     overflow: hidden;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     /* box-shadow: 20px 20px 60px #F7838D, -20px -20px 60px #FFE227; */
+     ;
+   }
+ 
+   .bg {
+     position: absolute;
+     top: 5px;
+     left: 5px;
+     width: 490px;
+     height: 340px;
+     z-index: 2;
+     backdrop-filter: blur(24px);
+     border-radius: 10px;
+     overflow: hidden;
+     outline: 2px solid #020301;
+   }
+ 
+   .blob {
+     position: absolute;
+     z-index: 1;
+     top: 50%;
+     left: 50%;
+     width: 500px;
+     height: 350px;
+     border-radius: 50%;
+     background-color: #FFFFFF;
+     opacity: 1;
+     filter: blur(12px);
+     animation: blob-bounce 5s infinite ease;
+   }
+   
+ }
+
+
+/* If the screen size is 1200px wide or more XL Desktop*/ 
+@media screen and (min-width: 1200px) {
+
+ /* Projects */
+  .project-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 80px;
+    color: #FFFFFF;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+  .project-display-container {
+    padding: 5px;
+  }
+
+  .project-description-container {
+    margin-left: 35px;
+    width: 50%;
+    font-size: 30px;
+    text-align: justify;
+  }
+
+
+  .card {
+    position: relative;
+    width: 500px;
+    height: 350px;
+    border-radius: 14px;
+    z-index: 3;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 20px 20px 60px #F7838D, -20px -20px 60px #FFE227; */
+    ;
+  }
+
+  .bg {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    width: 490px;
+    height: 340px;
+    z-index: 2;
+    backdrop-filter: blur(24px);
+    border-radius: 10px;
+    overflow: hidden;
+    outline: 2px solid #020301;
+  }
+
+  .blob {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 350px;
+    border-radius: 50%;
+    background-color: #FFFFFF;
+    opacity: 1;
+    filter: blur(12px);
+    animation: blob-bounce 5s infinite ease;
+  }
+  
+}
+
+.capstone1 {
+  background: url(./assets/images/capstone1.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.capstone2 {
+  background: url(./assets/images/capstone2.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.capstone3 {
+  background: url(./assets/images/capstone3.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+@keyframes blob-bounce {
+  0% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+
+  25% {
+    transform: translate(-100%, -100%) translate3d(100%, 0, 0);
+  }
+
+  50% {
+    transform: translate(-100%, -100%) translate3d(100%, 100%, 0);
+  }
+
+  75% {
+    transform: translate(-100%, -100%) translate3d(0, 100%, 0);
+  }
+
+  100% {
+    transform: translate(-100%, -100%) translate3d(0, 0, 0);
+  }
+}
+
+
+/* Code page */
+
+/* If the screen size is 576px wide or more Tablet*/ 
+@media screen and (max-width: 576px) {
+
+  .code-page-header {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  
+  .code-page-title {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: #F7838D solid 10px;
+    text-align: end;
+    width: 100%;
+    padding-right: 10%;
+  }
+  
+  .code-page-description {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+  
+  }
+  
+  .code-repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 10%;
+    justify-content: center;
+    height: 40vh;
+  }
+  
+  .project-repo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    max-height: 12%;
+  }
+  
+  .link-project-repo {
+    text-decoration: none;
+  
+  }
+  
+  .repo-title {
+    text-align: center;
+    font-size: 25px;
+    color: #FFE227;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .repo-tools {
+    display: flex;
+    justify-content: center;
+  }
+  .repo-tools-image {
+    width: 30px;
+    height: 30px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .project-repo:hover {
+    transform: scale(1.2);
+  }
+  
+}
+
+/* If the screen size is 577px wide or more Tablet*/ 
+@media screen and (min-width: 577px) {
+
+  .code-page-header {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  
+  .code-page-title {
+    color: #FFFFFF;
+    font-size: 50px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: #F7838D solid 10px;
+    text-align: end;
+    width: 65%;
+  }
+  
+  .code-page-description {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 16px;
+    margin-top: 20px;
+  
+  }
+  
+  .code-repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    height: 40vh;
+  }
+  
+  .project-repo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    max-height: 12%;
+  }
+  
+  .link-project-repo {
+    text-decoration: none;
+  
+  }
+  
+  .repo-title {
+    text-align: center;
+    font-size: 25px;
+    color: #FFE227;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .repo-tools {
+    display: flex;
+    justify-content: center;
+  }
+  .repo-tools-image {
+    width: 50px;
+    height: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .project-repo:hover {
+    transform: scale(1.2);
+  }
+  
+}
+
+/* If the screen size is 992px wide or more Desktop*/ 
+@media screen and (min-width: 992px) {
+
+  .code-page-header {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  
+  .code-page-title {
+    color: #FFFFFF;
+    font-size: 60px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: #F7838D solid 10px;
+    text-align: end;
+    width: 60%;
+  }
+  
+  .code-page-description {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    margin-top: 20px;
+  
+  }
+  
+  .code-repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    height: 40vh;
+  }
+  
+  .project-repo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    max-height: 12%;
+  }
+  
+  .link-project-repo {
+    text-decoration: none;
+  
+  }
+  
+  .repo-title {
+    text-align: center;
+    font-size: 25px;
+    color: #FFE227;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .repo-tools {
+    display: flex;
+    justify-content: center;
+  }
+  .repo-tools-image {
+    width: 50px;
+    height: 50px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .project-repo:hover {
+    transform: scale(1.2);
+  }
+  
+}
+
+/* If the screen size is 1200px wide or more XL Desktop*/ 
+@media screen and (min-width: 1200px) {
+
+  .code-page-header {
+    display: flex;
+    margin-top: 5%;
+    flex-direction: column;
+  }
+  
+  .code-page-title {
+    color: #FFFFFF;
+    font-size: 75px;
+    font-family: 'Ubuntu', sans-serif;
+    border-bottom: #F7838D solid 10px;
+    text-align: end;
+    width: 60%;
+  }
+  
+  .code-page-description {
+    color: #FFFFFF;
+    text-align: center;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    margin-top: 20px;
+  
+  }
+  
+  .code-repo-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    height: 40vh;
+  }
+  
+  .project-repo {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 2%;
+    margin-right: 2%;
+    max-height: 12%;
+  }
+  
+  .link-project-repo {
+    text-decoration: none;
+  
+  }
+  
+  .repo-title {
+    text-align: center;
+    font-size: 30px;
+    color: #FFE227;
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 10px;
+  }
+  
+  .repo-tools {
+    display: flex;
+    justify-content: center;
+  }
+  .repo-tools-image {
+    width: 75px;
+    height: 75px;
+    margin-left: 2px;
+    margin-right: 2px;
+  }
+  
+  .project-repo:hover {
+    transform: scale(1.2);
+  }
+  
+}
+
+
+/* Footer */
+.footer-info-container {
+  margin-top: 150px;
+  margin-bottom: 25px;
+  color: grey;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* If the screen size is 576px wide or more Mobile*/ 
+@media screen and (max-width: 576px) {
+  .footer-info-container {
+    font-size: 14px;
+  }
+}
+
+.footer-name {
+  margin-top: 25px;
+}
+
+.fullstack-footer {
+  margin-bottom: 10px;
+}
+
+.social-links,.flex-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.social-btn {
+  cursor: pointer;
+  height: 50px;
+  width: 50px;
+  font-family: 'Titillium Web', sans-serif;
+  color: #333;
+  border-radius: 10px;
+  box-shadow: 0px 10px 10px rgba(0,0,0,0.1);
+  background: #020301;
+  margin: 5px;
+  transition: 0.3s;
+  justify-content: center;
+}
+
+.social-btn svg {
+  height: 24px;
+  width: 24px;
+}
+
+.social-btn span {
+  width: 0px;
+  overflow: hidden;
+  transition: 0.3s;
+  text-align: center;
+  margin-left: 5px;
+}
+
+.social-btn-link {
+  text-decoration: none;
+}
+
+.social-btn:hover {
+  width: 250px;
+  border-radius: 5px;
+}
+
+.social-btn:hover span {
+  padding: 2px;
+  width: 150px;
+}
+
+#twitter svg {
+  fill: #333;
+}
+
+#linkedin svg {
+  fill: #333;
+}
+
+#github {
+  fill: #333;
 }
