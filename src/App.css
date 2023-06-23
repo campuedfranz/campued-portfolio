@@ -1557,7 +1557,7 @@ animation: blob-bounce 5s infinite ease;
 
 /* Code page */
 
-/* If the screen size is 576px wide or more Tablet*/ 
+/* If the screen size is 576px wide or more Mobile*/ 
 @media screen and (max-width: 576px) {
 
   .code-page-header {
@@ -1933,4 +1933,29 @@ animation: blob-bounce 5s infinite ease;
 
 #github {
   fill: #333;
+}
+
+/* Loading page */
+.loading-page-container {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.loading {
+  width: 500px;
+  height: 500px;
+}
+
+
+/* If the screen size is 576px wide or more Mobile*/ 
+@media screen and (max-width: 576px) {
+
+  .loading {
+    width: 250px;
+    height: 250px;
+  }
+  
 }
