@@ -12,6 +12,8 @@ import JS from '../assets/images/JS.png';
 import Postman from '../assets/images/Postman.png';
 import REST from '../assets/images/REST.png';
 import NPM from '../assets/images/NPM.png';
+import JQuery from '../assets/images/JQuery.png';
+
 
 
 
@@ -66,7 +68,20 @@ export default function Code() {
                         </div>
                     </a>
                 </div>
-                
+
+                <div class="project-repo">
+                    <a href='https://github.com/campuedfranz/color-pattern-game' target='_blank' class="link-project-repo">
+                        <div class="repo-title">Color Pattern Game</div>
+                        <div class="repo-tools">
+                            <img class="repo-tools-image" src={HTML}></img>
+                            <img class="repo-tools-image" src={CSS}></img>
+                            <img class="repo-tools-image" src={JS}></img>
+                            <img class="repo-tools-image" src={JQuery}></img>
+
+                        </div>
+                    </a>
+                </div>
+
                 <div class="project-repo">
                     <a href='https://github.com/campuedfranz/mini-projects' target='_blank' class="link-project-repo">
                         <div class="repo-title">Mini Projects</div>

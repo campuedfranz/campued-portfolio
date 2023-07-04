@@ -14,6 +14,7 @@ import VSCode from '../assets/images/VSCode.png';
 import Postman from '../assets/images/Postman.png';
 import REST from '../assets/images/REST.png';
 import NPM from '../assets/images/NPM.png';
+import JQeury from '../assets/images/JQuery.png';
 import Footer from '../components/Footer';
 
 
@@ -95,6 +96,10 @@ export default function About() {
                         <div class="language-container">
                             <img class="tech-stack-images" src={JS}></img>
                             <span>Scripting</span>
+                        </div>
+                        <div class="language-container">
+                            <img class="tech-stack-images" src={JQeury}></img>
+                            <span>DOM Manipulation</span>
                         </div>
                         <div class="language-container">
                             <img class="tech-stack-images" src={Bootstrap}></img>

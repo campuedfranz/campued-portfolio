@@ -1827,6 +1827,12 @@ animation: blob-bounce 5s infinite ease;
   background-size: cover;
 }
 
+.pattern-game {
+  background: url(./assets/images/pattern-game.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
 
 @keyframes blob-bounce {
   0% {

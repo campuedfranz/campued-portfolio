@@ -54,6 +54,19 @@ export default function Projects() {
             <div class="project-container">
                 <div class="project-display-container">
                     <div class="card">
+                        <div class="bg pattern-game"></div>
+                        <div class="blob"></div>
+                    </div>
+                </div>
+                <div class="project-description-container">
+                    Color pattern game that aims to test the player's memory and pattern recognition skills. It utilizes DOM manipulation and event listeners to create an 
+                    interactive experience. The game is built using HTML, CSS, JavaScript, and the jQuery library to enhance functionality and create a visually appealing 
+                    user interface.
+                </div>
+            </div>
+            <div class="project-container">
+                <div class="project-display-container">
+                    <div class="card">
                         <div class="bg mini-projects"></div>
                         <div class="blob"></div>
                     </div>
