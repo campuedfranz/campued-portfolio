@@ -19,8 +19,10 @@ export default function Projects() {
                     </div>
                 </div>
                 <div class="project-description-container">
-                    Responsive website portfolio across mobile, tablet, and desktop platforms. By utilizing React.js, HTML, and JavaScript, 
-                    the website dynamically adapted to different screen sizes, providing an optimal user experience. 
+                    Responsive website portfolio across mobile, tablet, and desktop platforms for optimal user experience. 
+                    <br></br>
+                    <br></br>
+                    Technology: #React.js #HTML #CSS #Javascript
                 </div>
             </div>
             <div class="project-container">
@@ -31,10 +33,13 @@ export default function Projects() {
                     </div>
                 </div>
                 <div class="project-description-container">
-                    An e-commerce API using REST architecture. Built on Node.js and Express.js, the API seamlessly handled requests and responses, 
-                    enabling smooth communication between the client-side and server-side. MongoDB was utilized as the database, and 
-                    various Node packages were incorporated to enhance functionality and streamline development processes. 
-                    The project is a robust and scalable e-commerce API.
+                    An E-Commerce Application Programming interface
+                    <br></br>
+                    <br></br>
+                    Technology: #REST Architecture #Node.js #Express.js #Javascript #MongoDB 
+                    <br></br>
+                    <br></br>
+                    Scalable API for handling requests and responses for dynamic content rendering which utulizes No-SQL database for horizontal scalalable data sets.
                 </div>
             </div>
             <div class="project-container">
@@ -45,10 +50,14 @@ export default function Projects() {
                     </div>
                 </div>
                 <div class="project-description-container">
-                    An e-commerce front-end application using React.js, Bootstrap, and several Node packages. Leveraging React.js's component-based architecture and Bootstrap's responsive design, 
+                    An e-commerce front-end application 
+                    <br></br>
+                    <br></br>
+                    Technology: #React.js, #HTML #CSS #Javascript #Bootstrap #NodePackages
+                    <br></br>
+                    <br></br>
+                    Leveraging React.js's component-based architecture and Bootstrap's responsive design, 
                     the application provided a user-friendly and visually appealing interface for online shopping. 
-                    Through the integration of various Node packages, the project delivered enhanced functionality and efficient development processes, 
-                    resulting in a robust and engaging e-commerce front-end application.
                 </div>
             </div>
             <div class="project-container">
@@ -59,9 +68,15 @@ export default function Projects() {
                     </div>
                 </div>
                 <div class="project-description-container">
-                    Color pattern game that aims to test the player's memory and pattern recognition skills. It utilizes DOM manipulation and event listeners to create an 
-                    interactive experience. The game is built using HTML, CSS, JavaScript, and the jQuery library to enhance functionality and create a visually appealing 
-                    user interface.
+                    Color pattern game 
+                    <br></br>
+                    <br></br>
+                    Technology: #HTML #CSS #Javascript #DOM #JQuery
+                    <br></br>
+                    <br></br>
+                    
+                    Test the player's memory and pattern recognition skills. It utilizes DOM manipulation and event listeners to create an 
+                    interactive experience.
                 </div>
             </div>
             <div class="project-container">
@@ -72,9 +87,15 @@ export default function Projects() {
                     </div>
                 </div>
                 <div class="project-description-container">
-                    Mini projects utilizing HTML, CSS, JavaScript, and DOM manipulation. The projects included a quote generator, an accordion, and 
-                    a to-do list, each showcasing different aspects of web development and interactivity. Through the implementation of Fetch API concepts on the quote generator, 
-                    the project offered dynamic content generation functionalities, providing valuable hands-on experience in front-end development.
+                    Mini projects 
+                    <br></br>
+                    <br></br>
+                    Technology: #HTML #CSS #Javascript #Python #PHP #Java
+                    <br></br>
+                    <br></br>
+                    Collection of mini-projects from learning various technologies which include a quote generator, an accordion, a to-do list, and more each showcasing 
+                    different aspects of web development and interactivity. Implementation of Fetch API concepts to use various publicly available API like Mailchimp, Weather API and alike
+                    the project offered dynamic content generation functionalities, providing valuable hands-on experience.
                 </div>
             </div>
 
