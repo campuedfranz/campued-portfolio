@@ -13,6 +13,10 @@ import Postman from '../assets/images/Postman.png';
 import REST from '../assets/images/REST.png';
 import NPM from '../assets/images/NPM.png';
 import JQuery from '../assets/images/JQuery.png';
+import PHP from '../assets/images/PHP.png';
+import Python from '../assets/images/Python.png';
+import Java from '../assets/images/Java.png';
+
 
 
 
@@ -89,6 +93,9 @@ export default function Code() {
                             <img class="repo-tools-image" src={HTML}></img>
                             <img class="repo-tools-image" src={CSS}></img>
                             <img class="repo-tools-image" src={JS}></img>
+                            <img class="repo-tools-image" src={PHP}></img>
+                            <img class="repo-tools-image" src={Python}></img>
+                            <img class="repo-tools-image" src={Java}></img>
                         </div>
                     </a>
                 </div>
